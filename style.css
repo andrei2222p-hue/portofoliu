@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    background: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 4/5;
+    object-fit: cover; /* Instructiunea care umple cadrul fără să deformeze pozele */
+}
+
+.gallery-item figcaption {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #cccccc;
+    text-align: center;
+}
